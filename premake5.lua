@@ -21,6 +21,11 @@ project "spdlog"
 	{
 	}
 
+	defines
+	{
+		"SPDLOG_COMPILED_LIB"
+	}
+
 	filter "system:windows"
 		systemversion "latest"
 		cppdialect "C++17"
