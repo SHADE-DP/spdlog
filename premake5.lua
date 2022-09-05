@@ -7,9 +7,9 @@ project "spdlog"
 
 	files
 	{
-		"include/*.h",
-		"include/*.hpp",
-		"src/*.cpp"
+		"%{prj.location}/include/*.h",
+		"%{prj.location}/include/*.hpp",
+		"%{prj.location}/src/*.cpp"
 	}
 
 	includedirs
