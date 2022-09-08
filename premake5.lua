@@ -26,6 +26,8 @@ project "spdlog"
 		"SPDLOG_COMPILED_LIB"
 	}
 
+	disablewarnings { "warnings" }
+
 	filter "system:windows"
 		systemversion "latest"
 		cppdialect "C++17"
