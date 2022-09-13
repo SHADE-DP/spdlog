@@ -3,8 +3,8 @@ project "spdlog"
 	language "C++"
 	staticruntime "off"
 
-	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir (outputdir)
+	objdir (interdir)
 
 	files
 	{
