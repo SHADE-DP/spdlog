@@ -81,11 +81,7 @@ SPDLOG_API void flush_on(level::level_enum log_level);
 
 // Start/Restart a periodic flusher thread
 // Warning: Use only if all your loggers are thread safe!
-template<typename Rep, typename Period>
-inline void flush_every(std::chrono::duration<Rep, Period> interval)
-{
-    details::registry::instance().flush_every(interval);
-}
+SPDLOG_API void flush_every(std::chrono::seconds interval);
 
 // Set global error handler
 SPDLOG_API void set_error_handler(void (*handler)(const std::string &msg));
